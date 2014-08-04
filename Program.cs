@@ -11,30 +11,17 @@ using System.Threading.Tasks;
 
 namespace DFS
 {   
-  
-    
-
         class Node
         {
-
             int data;
             Node left, right;
             
-
             public Node(int data)
             {
                 this.data = data;
                 left = null;
                 right = null;
-                
             }
-
-            public static Boolean isBst(Node num, int maxData, int minData)
-            {
-
-                return false;
-            }
-
 
             public void InsertNode(int num)
             {
@@ -65,7 +52,6 @@ namespace DFS
                             temp = temp.right;
                         }
                     }
-
                 }
             }
 
@@ -120,22 +106,13 @@ namespace DFS
                     {
                         bread.Enqueue(start.right);
                     }
-                    
                 }
-                
             }
         }
        
     
-
-    
-
-
     class Program
     {
-       
-
-
         static void Main(string[] args)
         {
 
@@ -161,7 +138,6 @@ namespace DFS
 
             Console.WriteLine("Breadth-first Search");
             root.BreadthBST(root);
-
 
         }
     }
